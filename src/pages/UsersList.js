@@ -10,6 +10,7 @@ import { Toast } from 'primereact/toast';
 import { ExportToCsv } from "export-to-csv";
 import { Checkbox } from 'primereact/checkbox';
 import CalendarControl from '../layouts/dashboard/header/CalendarControl';
+import Iconify from '../components/iconify';
 
 const UsersList = () => {
     const [products, setProducts] = useState([]);
@@ -255,8 +256,7 @@ const UsersList = () => {
                     <div className="text-900 font-medium text-xl">152</div>
                 </div>
                 <div className="flex align-items-center justify-content-center bg-blue-100 border-round" style={{ width: '2.5rem', height: '2.5rem' }}>
-                    <i className="pi pi-shopping-cart text-blue-500 text-xl"/>
-                </div>
+                <Iconify icon={'line-md:lightbulb-filled'} color="#1C9CEA" width={32} />                </div>
             </div>
             <span className="text-green-500 font-medium">24 new </span>
             <span className="text-500">since last visit</span>
